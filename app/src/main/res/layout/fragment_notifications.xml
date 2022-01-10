@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_primary_dark"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:layout_marginTop="10sp"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:text="AIT CLUBS"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/clubsButton1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/gdsc_logo" />
+            <ImageButton
+                android:id="@+id/clubsButton2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/oss_logo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_marginEnd="15sp"
+                android:textColor="@color/design_default_color_primary"
+                android:text="GDSC"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginStart="15sp"
+                android:layout_weight="1"
+                android:textColor="@color/design_default_color_primary"
+                android:text="Oss"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/clubsButton3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/technical_board_logo" />
+            <ImageButton
+                android:id="@+id/clubsButton4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ddq_logo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_marginEnd="15sp"
+                android:textColor="@color/design_default_color_primary"
+                android:text="Technical Board"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginStart="15sp"
+                android:layout_weight="1"
+                android:textColor="@color/design_default_color_primary"
+                android:text="DDQ Club"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/clubsButton5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/cultural_board_logo" />
+            <ImageButton
+                android:id="@+id/clubsButton6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/fine_arts_logo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_marginEnd="15sp"
+                android:textColor="@color/design_default_color_primary"
+                android:text="Cultural Board"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginStart="15sp"
+                android:layout_weight="1"
+                android:textColor="@color/design_default_color_primary"
+                android:text="Fine Art Clubs"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/clubsButton7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/sport_logo" />
+            <ImageButton
+                android:id="@+id/clubsButton8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/magazine_board_logo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_marginEnd="15sp"
+                android:textColor="@color/design_default_color_primary"
+                android:text="Sport Clubs"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginStart="15sp"
+                android:layout_weight="1"
+                android:textColor="@color/design_default_color_primary"
+                android:text="Magazine Board"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/clubsButton9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/cear_logo" />
+            <ImageButton
+                android:id="@+id/clubsButton10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/spiritual_club_logo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_marginEnd="15sp"
+                android:textColor="@color/design_default_color_primary"
+                android:text="CEAR Club"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginStart="15sp"
+                android:layout_weight="1"
+                android:textColor="@color/design_default_color_primary"
+                android:text="Spiritual Club"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/clubsButton11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/coding_cell_logo" />
+            <ImageButton
+                android:id="@+id/clubsButton12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/isdf_logo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_marginEnd="15sp"
+                android:textColor="@color/design_default_color_primary"
+                android:text="Coding Cell"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginStart="15sp"
+                android:layout_weight="1"
+                android:textColor="@color/design_default_color_primary"
+                android:text="ISDF Club"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/clubsButton13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/maths_logo" />
+            <ImageButton
+                android:id="@+id/clubsButton14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/radio_club_logo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_marginEnd="15sp"
+                android:textColor="@color/design_default_color_primary"
+                android:text="Maths Club"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginStart="15sp"
+                android:layout_weight="1"
+                android:textColor="@color/design_default_color_primary"
+                android:text="Radio Club"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/clubsButton15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/nss_logo" />
+            <ImageButton
+                android:id="@+id/clubsButton16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/nature_club_logo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_marginEnd="15sp"
+                android:textColor="@color/design_default_color_primary"
+                android:text="NSS Club"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginStart="15sp"
+                android:layout_weight="1"
+                android:textColor="@color/design_default_color_primary"
+                android:text="Nature Club"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

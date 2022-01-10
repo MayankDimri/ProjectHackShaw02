@@ -1,0 +1,2097 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".placement">
+
+    <ScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    // overall Placement
+    <TextView
+        android:id="@+id/overallPlacement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Overall Placement"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:textSize="24sp"
+        android:fontFamily="cursive"
+        android:textColor="@color/white"
+        android:background="@color/design_default_color_primary_dark"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/overallPlacement">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#D6D5D5"
+                android:gravity="center"
+                android:text="Overall Placement"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="#B1AEAE"
+                android:gravity="center"
+                android:paddingStart="6sp"
+                android:text="SALARY(Lackh)" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="YEAR"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="% Placed"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="Highest"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="Average"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="Median"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#B1AEAE">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2020-21"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="91"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="39"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="9.45"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="7.6"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2019-20"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="92"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="39"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="7.30"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="6.50"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#B1AEAE">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2018-19"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="92"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="39"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="7.15"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="6.4"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2017-18"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="93"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="39"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5.90"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5.00"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#B1AEAE">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2016-17"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="93"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="24"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5.40"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="4.6"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2015-16"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="96"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="32.50"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5.10"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="4.20"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+    </TableLayout>
+
+    // cs Placement
+    <TextView
+        android:id="@+id/csPlacement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary_dark"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Computer Engg Placement"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/csPlacement">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#D6D5D5"
+                android:gravity="center"
+                android:text="Computer Engg Placement"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="#B1AEAE"
+                android:gravity="center"
+                android:paddingStart="6sp"
+                android:text="SALARY(Lackh)" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="YEAR"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="% Placed"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="Highest"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="Average"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="Median"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#B1AEAE">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2020-21"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="99"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="39"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="11.45"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2019-20"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="99"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="39"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="8.70"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#B1AEAE">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2018-19"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="97"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="39"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10.46"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2017-18"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="98"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="39"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="8.00"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#B1AEAE">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2016-17"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="95"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="21.30"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="7.30"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2015-16"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="100"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="32.50"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="7.27"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+    </TableLayout>
+
+    // entc Placement
+    <TextView
+        android:id="@+id/entcPlacement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary_dark"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="ENTC Placement"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/entcPlacement">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#D6D5D5"
+                android:gravity="center"
+                android:text="ENTC Placement"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="#B1AEAE"
+                android:gravity="center"
+                android:paddingStart="6sp"
+                android:text="SALARY(Lackh)" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="YEAR"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="% Placed"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="Highest"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="Average"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="Median"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#B1AEAE">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2020-21"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="88"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="19.60"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="6.85"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2019-20"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="91"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="13"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5.70"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#B1AEAE">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2018-19"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="88"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="7.50"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5.27"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2017-18"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="92"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="39"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="4.80"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#B1AEAE">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2016-17"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="95"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="24"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="4.70"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2015-16"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="92"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="9.50"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="4.21"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+    </TableLayout>
+
+    // it Placement
+    <TextView
+        android:id="@+id/itPlacement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary_dark"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="IT Placement"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout3" />
+    <TableLayout
+        android:id="@+id/tableLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/itPlacement">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#D6D5D5"
+                android:gravity="center"
+                android:text="ENTC Placement"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="#B1AEAE"
+                android:gravity="center"
+                android:paddingStart="6sp"
+                android:text="SALARY(Lackh)" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="YEAR"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="% Placed"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="Highest"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="Average"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="Median"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#B1AEAE">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2020-21"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="95"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="39"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10.85"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2019-20"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="97"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="28"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="9.30"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#B1AEAE">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2018-19"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="98"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="28"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="8.35"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2017-18"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="93"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="39"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="7.10"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#B1AEAE">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2016-17"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="92"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="14.8"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5.60"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2015-16"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="98"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5.12"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+    </TableLayout>
+
+    // mech Placement
+    <TextView
+        android:id="@+id/mechPlacement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary_dark"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Mech Placement"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout4" />
+    <TableLayout
+        android:id="@+id/tableLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/mechPlacement">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#D6D5D5"
+                android:gravity="center"
+                android:text="ENTC Placement"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="#B1AEAE"
+                android:gravity="center"
+                android:paddingStart="6sp"
+                android:text="SALARY(Lackh)" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="YEAR"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="% Placed"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="Highest"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="Average"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="6sp"
+                android:text="Median"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#B1AEAE">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2020-21"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="70"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="8.93"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="4.7"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2019-20"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="74"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10.5"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5.10"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#B1AEAE">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2018-19"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="77"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="7"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="4.94"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2017-18"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="88"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="7"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="4.60"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#B1AEAE">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2015-16"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="85"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="7"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="4.60"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2016-17"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="96"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="7"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="4.29"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="81dp" />
+        </TableRow>
+
+    </TableLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

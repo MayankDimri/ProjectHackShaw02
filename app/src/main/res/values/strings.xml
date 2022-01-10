@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Hackshaw</string>
+    <string name="title_home">Home</string>
+    <string name="title_academics">Academics</string>
+    <string name="title_clubs">Clubs</string>
+    <string name="splash_screen_title">AiT</string>
+    <string name="linkoutside01"><a href="https://www.youtube.com/channel/UCER1cHgm8JPfQiCchBN1XCg">link</a></string>
+    <string name="linkoutside02"><a href="https://www.youtube.com/c/BTechMathematics">link</a></string>
+    <string name="linkoutside03"><a href="https://www.youtube.com/c/Lastmomenttuitions">link</a></string>
+    <string name="linkoutside04"><a href="https://www.youtube.com/user/saurabhexponent1">link</a></string>
+    <string name="linkoutside05"><a href="https://www.youtube.com/channel/UCF7BExjT2zH_mmyqOB139Dg">link</a></string>
+    <string name="linkoutside06"><a href="https://www.youtube.com/c/CodeWithHarry">link</a></string>
+    <string name="linkoutside07"><a href="https://www.youtube.com/c/ManasPatnaikmech">link</a></string>
+    <string name="linkoutside08"><a href="https://www.youtube.com/c/LEARNANDGROW">link</a></string>
+    <string name="linkoutside09"><a href="https://www.youtube.com/c/SachinPandya">link</a></string>
+    <string name="linkoutside010"><a href="https://www.youtube.com/c/ManasPatnaikmech">link</a></string>
+    <string name="linkoutside011"><a href="https://www.youtube.com/channel/UCYa1WtI-vb_bx-anHdmpNfA">link</a></string>
+    <string name="linkoutside012"><a href="https://www.youtube.com/channel/UCbZuIQWIzOt0ul5KYDXgVZQ">link</a></string>
+    <string name="linkoutside013"><a href="https://www.youtube.com/c/nesoacademy">link</a></string>
+    <string name="linkoutside014"><a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg">link</a></string>
+    <string name="linkoutside015"><a href="https://www.youtube.com/c/TechGurukul">link</a></string>
+    <string name="linkoutside016"><a href="https://www.youtube.com/c/Ekeeda">link</a></string>
+    <string name="linkoutside017"><a href="https://www.youtube.com/channel/UCZ9_mhxSMyVtfPZOkb1PgTA">link</a></string>
+    <string name="linkoutside018"><a href="https://www.youtube.com/c/Lastmomenttuitions">link</a></string>
+</resources>

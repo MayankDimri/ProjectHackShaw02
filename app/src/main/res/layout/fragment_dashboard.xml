@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageview01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/academicsimage" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/booksid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/booksicon"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ytchannelid"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="LIST OF YOU-\nTUBE CHANNELS" />
+
+    <ImageButton
+        android:id="@+id/Lecturesid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/booksid"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/noteesicon"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/booksid"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="-5dp"
+        android:layout_toRightOf="@id/ytchannelid"
+        android:text="BOOKS" />
+
+    <ImageButton
+        android:id="@+id/assignmentsid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ytchannelid"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/assignmetsicon"
+        android:textStyle="bold"
+
+        />
+// -.19+19+1.9+1-0.4+13.5+0.95
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/assignmentsid"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:text="ASSIGNMENTS\n(in process...)" />
+
+
+    <ImageButton
+        android:id="@+id/ytchannelid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/ytchannels"
+        android:layout_marginTop="300dp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Lecturesid"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/ytchannelid"
+        android:text="LECTURE NOTES\n(in process...)" />
+
+</RelativeLayout>

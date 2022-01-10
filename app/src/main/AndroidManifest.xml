@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aitclubs.hackshaw">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hackshaw">
+        <activity
+            android:name=".placement"
+            android:exported="false" />
+        <activity
+            android:name=".scolarship"
+            android:exported="false" />
+        <activity
+            android:name=".comingSoon"
+            android:exported="false" />
+        <activity
+            android:name=".listofyoutubechannels"
+            android:exported="false" />
+        <activity
+            android:name=".timetable"
+            android:exported="false" />
+        <activity
+            android:name=".driveAssignment"
+            android:exported="false" />
+        <activity
+            android:name=".driveNotes"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".driveBooks"
+            android:exported="false" />
+        <activity
+            android:name=".splash_Activity"
+            android:exported="true"
+            android:theme="@style/Theme.Hackshaw.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

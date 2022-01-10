@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".timetable">
+
+    <ScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COMP A                            SEM I"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:background="#ED19F4" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="950dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/compatt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COMP B                            SEM I"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:background="#ED19F4" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="950dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/compbtt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="     IT                                  SEM I"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:background="#ED19F4" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="950dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ittt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENTC A                             SEM I"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:background="#ED19F4" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="950dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/entcatt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENTC B                             SEM I"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:background="#ED19F4" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="950dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/entcbtt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" MECH                              SEM I"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:background="#ED19F4" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="950dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/mechtt" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
